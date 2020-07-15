@@ -1,0 +1,88 @@
+//====================================================================================================
+.header {
+   padding: 10px 0px 0px 0px;
+   // .header__inner
+
+   &__inner {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 60px;
+   }
+
+   // .header__logo
+
+   &__logo {
+      display: block;
+      margin-right: 88px;
+   }
+
+   // .header__menu
+
+   &__menu {
+   }
+}
+.container {
+}
+.menu {
+   // .menu__icon
+
+   &__icon {
+   }
+
+   // .menu__body
+
+   &__body {
+   }
+
+   // .menu__list
+
+   &__list {
+      display: flex;
+      li + li {
+      }
+   }
+
+   // .menu__link
+
+   &__link {
+      position: relative;
+      display: block;
+      max-width: 223px;
+      width: 100%;
+      padding: 0px 0px 0px 51px;
+      color: #666666;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      font-style: italic;
+      &--form-1 {
+         margin-right: 10px;
+      }
+
+      &:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 39px;
+         height: 39px;
+         background-repeat: no-repeat;
+         background-image: url("../images/forma.svg");
+      }
+      &--form-2 {
+         &:after {
+            left: 15px;
+            top: -4px;
+            background-image: url("../images/forma_2.svg");
+         }
+      }
+      &--form-3 {
+         &:after {
+            left: -1px;
+            top: -2px;
+            background-image: url("../images/user.svg");
+         }
+      }
+   }
+}
