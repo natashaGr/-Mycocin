@@ -45,6 +45,7 @@ body {
 
 @import "header.scss";
 @import "content.scss";
+@import "fungus.scss";
 @import "footer.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -94,6 +95,113 @@ body {
       }
    }
 }
+.home {
+   // .home__product
+
+   &__product {
+   }
+}
+.product {
+   position: absolute;
+   bottom: 15px;
+   left: 21.5%;
+   z-index: 4;
+   display: flex;
+   max-width: 698px;
+   width: 100%;
+   min-height: 407px;
+   // .product__packaging
+
+   &__packaging {
+   }
+
+   // .product__packaging--large
+
+   &__packaging--large {
+      position: absolute;
+      z-index: 1;
+      bottom: 71px;
+      left: 0;
+      max-width: 378px;
+      width: 100%;
+      min-height: 271px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../images/product-1.png");
+   }
+
+   &__packaging-decor {
+      position: absolute;
+      z-index: 2;
+      bottom: -51px;
+      left: -49px;
+      max-width: 186px;
+      width: 100%;
+      min-height: 97px;
+      background-image: url("../images/product-4.png");
+      &--branch {
+      }
+   }
+
+   &__packaging--branch {
+      position: absolute;
+      right: 174px;
+      top: 66px;
+      z-index: -1;
+      max-width: 313px;
+      width: 100%;
+      min-height: 232px;
+      background-image: url("../images/product-5.png");
+   }
+
+   // .product__packaging--less
+
+   &__packaging--less {
+      position: absolute;
+      z-index: 2;
+      left: 108px;
+      bottom: 20px;
+      max-width: 421px;
+      width: 100%;
+      min-height: 189px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../images/product-2.png");
+   }
+
+   // .product__packaging--small
+
+   &__packaging--small {
+      position: absolute;
+      bottom: 0;
+      left: 255px;
+      z-index: 3;
+      max-width: 339px;
+      width: 100%;
+      min-height: 135px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../images/product-3.png");
+   }
+
+   &__packaging-price {
+      position: absolute;
+      right: -7px;
+      top: -12px;
+      padding: 7px 0px 7px 11px;
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 24px;
+      border-radius: 8px;
+      background-color: #ff6b00;
+      &--color-green {
+         right: 42px;
+         background-color: #a8ca3f;
+      }
+   }
+}
+
 //====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

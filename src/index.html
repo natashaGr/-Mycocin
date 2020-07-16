@@ -5,13 +5,30 @@
 <body>
   <div class="wrapper">
     <div class="home-bg">
-      <div class="home-bg__decor">
+      <div class="home-bg__decor"></div>
+      <div class="home__product product">
+        <div class="product__packaging--branch">
 
+        </div>
+        <div class="product__packaging product__packaging--large">
+          <span class="product__packaging-price">
+            299
+            <img src="images/currency-icon.svg" alt="currency">
+          </span>
+          <div class="product__packaging-decor"></div>
+        </div>
+        <div class="product__packaging product__packaging--less">
+          <span class="product__packaging-price product__packaging-price--color-green">
+            299
+            <img src="images/currency-icon.svg" alt="currency">
+          </span>
+        </div>
+        <div class="product__packaging product__packaging--small"></div>
       </div>
       @@include('components/_header.html')
       @@include('components/_content.html')
     </div>
-
+    @@include('components/_fungus.html')
     <!-- WRITE CODE HERE -->
 
     <!-- STOP WRITE CODE -->
