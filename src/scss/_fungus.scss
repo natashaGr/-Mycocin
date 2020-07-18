@@ -1,5 +1,19 @@
 .fungus {
-   padding: 20px 18px 74px 0px; // .fungus__title
+   padding: 20px 18px 74px 0px;
+   @media (max-width: 1624px) {
+      padding: 100px 18px 74px 0px;
+   }
+   @media (max-width: 1624px) {
+      padding: 250px 0px 74px 0px;
+   }
+
+   @media (max-width: 960px) {
+      padding: 300px 0px 74px 0px;
+   }
+
+   @media (max-width: 662px) {
+      padding: 50px 0px 74px 0px;
+   }
 
    &__title {
       position: relative;
@@ -38,8 +52,12 @@
 
    &__inner {
       display: flex;
+      flex-wrap: wrap;
       padding-top: 49px;
       padding-bottom: 70px;
+      @media (max-width: 1182px) {
+         justify-content: center;
+      }
    }
 
    // .fungus__col
@@ -49,6 +67,17 @@
       width: 100%;
       & + & {
          margin-left: 57px;
+      }
+      @media (max-width: 1182px) {
+         margin-bottom: 50px;
+      }
+      @media (max-width: 752px) {
+         & + & {
+            margin-left: 0;
+         }
+      }
+      @media (max-width: 410px) {
+         max-width: 100%;
       }
    }
 
@@ -70,6 +99,16 @@
          transform: rotate(2deg);
          background-image: url("../images/fungus-line.png");
       }
+      @media (max-width: 410px) {
+         flex-direction: column;
+         justify-content: center;
+         &:after {
+            content: "";
+            left: -40px;
+            right: 0;
+            margin: 0 auto;
+         }
+      }
    }
 
    // .fungus__head-num
@@ -89,6 +128,9 @@
       color: #ffffff;
       font-size: 30px;
       font-weight: 400;
+      @media (max-width: 410px) {
+         right: 25%;
+      }
       // &:after {
       //    content: "";
       //    position: absolute;
@@ -164,6 +206,9 @@
          background-repeat: no-repeat;
          background-position: center;
          background-image: url("../images/_statistics-icon.png");
+      }
+      @media (max-width: 600px) {
+         padding: 40px 20px 33px;
       }
    }
 

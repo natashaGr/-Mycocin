@@ -5,6 +5,13 @@
    &__inner {
       display: flex;
       justify-content: flex-end;
+      @media (max-width: 1624px) {
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+      @media (max-width: 670px) {
+         justify-content: center;
+      }
    }
 
    // .content__testimony
@@ -13,6 +20,17 @@
       max-width: 367px;
       width: 100%;
       margin-right: 33px;
+      @media (max-width: 1624px) {
+         position: relative;
+         z-index: 3;
+         border-radius: 10px;
+         background-color: rgba($color: #fff, $alpha: 0.5);
+      }
+      @media (max-width: 670px) {
+         margin-bottom: 40px;
+         margin-right: 0;
+         padding: 0px 0px 20px 0px;
+      }
    }
 
    // .content__book
@@ -37,6 +55,11 @@
       line-height: 43px;
       font-size: 44px;
       cursor: pointer;
+      @media (max-width: 400px) {
+         max-width: 100%;
+         font-size: 30px;
+         text-align: center;
+      }
    }
 
    &__text-size {
@@ -44,6 +67,9 @@
       font-size: 34px;
       font-weight: 700;
       line-height: 38px;
+      @media (max-width: 400px) {
+         font-size: 25px;
+      }
    }
 
    &__border {
@@ -104,11 +130,14 @@
          content: "";
          z-index: -1;
          position: absolute;
+         top: 50%;
+         left: 50%;
          max-width: 45px;
          width: 100%;
          min-height: 45px;
          border-radius: 50%;
          background-color: #a7c93d;
+         transform: translate(-50%, -50%);
       }
 
       &--decor {
